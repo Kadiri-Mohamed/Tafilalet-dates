@@ -39,7 +39,7 @@
     left: 0;
     width: 40%;
     height: 2px;
-    background-color: gold;
+    background-color: #ffd700;
   }
   .active {
     font-weight: bold;

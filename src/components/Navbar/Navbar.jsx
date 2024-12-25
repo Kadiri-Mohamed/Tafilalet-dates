@@ -18,19 +18,20 @@ const Navbar = () => {
 
             <ul className="nav-links">
                 <li>
-                    <Link to="/" className={location.pathname === '/' ? 'active' : ''}> ACCUEIL
+                    <Link to="/" className={`${location.pathname === '/' ? 'active' : ''}`}> ACCUEIL
+                    </Link>
+                </li>
+                
+                <li>
+                    <Link to="/products" className={`${location.pathname === '/products' ? 'active' : ''}`}> PRODUITS
                     </Link>
                 </li>
                 <li>
-                    <Link to="/products" className={location.pathname === '/products' ? 'active' : ''}> PRODUITS
+                    <Link to="/services" className={`${location.pathname === '/services' ? 'active' : ''}`}> SERVICES
                     </Link>
                 </li>
                 <li>
-                    <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}> SERVICES
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}> CONTACT
+                    <Link to="/contact" className={`${location.pathname === '/contact' ? 'active' : ''}`}> CONTACT
                     </Link>
                 </li>
             </ul>
