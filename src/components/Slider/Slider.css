@@ -1,0 +1,71 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Increased the max-width */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Added transition for smooth sliding */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.slide-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+}
+
+.product-name {
+    font-size: 1.2rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
+}
+
+.slider-button:hover {
+    color: #f0f0f0; /* Change color on hover for better visibility */
+}
