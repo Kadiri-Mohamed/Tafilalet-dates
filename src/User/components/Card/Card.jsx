@@ -1,6 +1,6 @@
 export default function Card({ image, title, prix }) {
   return (
-    <div className="col-lg-3 max-w-80 col-md-4 col-sm-5 my-2  br-5 rounded-md bg-slate-500 ">
+    <div className="col-lg-3 max-w-80 col-md-4 col-sm-5 my-2 p-0 br-5 rounded-md bg-slate-500 ">
       <div
         className="card-image"
         style={{

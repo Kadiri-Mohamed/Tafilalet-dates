@@ -10,20 +10,6 @@ const intialState = {
             prix: 1000,
         },
         {
-            id: 2,
-            name: 'Dattes fagouss',
-            description: 'Dattes majhoul',
-            image: 'datte-majhoul-01-jpg.jpg',
-            prix: 1000,
-        },
-        {
-            id: 3,
-            name: 'Dattes test',
-            description: 'Dattes majhoul',
-            image: 'datte-majhoul-01-jpg.jpg',
-            prix: 1000,
-        },
-        {
             id: 4,
             name: 'Dattes likan',
             description: 'Dattes majhoul',
@@ -46,6 +32,19 @@ const intialState = {
         },
         {
             id: 7,
+            name: 'Dattes test',
+            description: 'Dattes majhoul',
+            image: 'datte-majhoul-01-jpg.jpg',
+            prix: 1000,
+        },{
+            id: 2,
+            name: 'Dattes fagouss',
+            description: 'Dattes majhoul',
+            image: 'datte-majhoul-01-jpg.jpg',
+            prix: 1000,
+        },
+        {
+            id: 3,
             name: 'Dattes test',
             description: 'Dattes majhoul',
             image: 'datte-majhoul-01-jpg.jpg',

@@ -1,9 +1,7 @@
-
 import React from "react"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Footer = (props) => {
-
   return (
     <footer className="footer bg-black text-white p-2">
       <div className="container">
@@ -15,7 +13,7 @@ const Footer = (props) => {
           </div>
           <div className="col-md-3 col-sm-12">
             <h4 className="text-2xl ">Informations</h4>
-            <ul className="list-none ">
+            <ul className="list-none">
               <li ><a className="hover:text-[#ffd700]" href="#">A propos</a></li>
               <li ><a className="hover:text-[#ffd700]" href="#">Contact</a></li>
               <li ><a className="hover:text-[#ffd700]" href="#">Mentions légales</a></li>
@@ -32,9 +30,9 @@ const Footer = (props) => {
           <div className="col-md-3 col-sm-12">
             <h4 className="text-2xl">Newsletter</h4>
             <form action="">
-              <input type="email" className="border-2 rounded-md p-1" placeholder="Votre email" />
+              <input type="email" className="border-2 rounded-md p-1 text-black" placeholder="Votre email" />
 
-              <button className="bg-[#efd338b1] text-black rounded-md p-1 ml-2 mt-4 hover:bg-[#ffd700] k" type="submit" >S'abonner</button>
+              <button className="bg-[#efd338b1] text-black rounded-md p-1 ml-2 mt-4 hover:bg-[#ffd700] " type="submit" >Envoyer</button>
             </form>
           </div>
         </div>

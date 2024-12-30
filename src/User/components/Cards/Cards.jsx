@@ -4,7 +4,7 @@ import Card from "../Card/Card"
 const Cards = () => {
     const products = useSelector((state) => state.products);
     return (
-        <div className="row py-4 px-5">
+        <div className="row py-4 px-5 align-middle items-center">
 
             {products.map((product) => (
                     <Card
