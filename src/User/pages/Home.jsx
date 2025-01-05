@@ -5,8 +5,7 @@ import React from "react"
 const Home = (props) => {
 
   return (
-<main>
-         <h1>Home</h1>
+<main className="container ">
          <Slider />
 </main>
  

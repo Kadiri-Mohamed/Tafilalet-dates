@@ -1,10 +1,8 @@
 module.exports = {
-  content: [
-    './src/**/*.{html,js,jsx,ts,tsx}', // Adaptez en fonction de votre structure
-    './public/index.html',
-  ],
+  darkMode: 'class', // Active le mode sombre basé sur une classe
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+      extend: {},
   },
   plugins: [],
 };

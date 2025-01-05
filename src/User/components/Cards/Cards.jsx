@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
+import Card from '../Card/Card'
 import { useSelector } from "react-redux";
-import Card from "../Card/Card"
 const Cards = () => {
-    const products = useSelector((state) => state.products);
+    const products = useSelector(data => data.products)
     return (
-        <div className="row py-4 px-5 align-middle items-center">
+        <div className="flex flex-wrap gap-4 justify-center items-center py-4 px-5 align-middle ">
 
             {products.map((product) => (
                     <Card
