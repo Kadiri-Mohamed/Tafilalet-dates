@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 
 // User Pages
 import Home from '../User/pages/Home';
-import Products from '../User/Pages/Products';
+import Products from '../User/pages/Products';
+import Cart from '../User/pages/Cart';
 // Admin Pages
 import ManagementComments from '../Admin/pages/ManagementComments';
 import ManagementProducts from '../Admin/pages/managementProducts';
@@ -47,6 +48,14 @@ const AppRoutes = () => {
         element={
           <UserLayout>
             <h1>Contact</h1>
+          </UserLayout>
+        }
+      />
+      <Route
+        path="/cart"
+        element={
+          <UserLayout>
+            <Cart/>
           </UserLayout>
         }
       />

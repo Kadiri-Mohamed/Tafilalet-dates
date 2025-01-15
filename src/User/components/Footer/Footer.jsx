@@ -12,7 +12,7 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="col-md-3 col-sm-12">
-            <h4 className="text-2xl ">Informations</h4>
+            <h4 className="text-2xl text-danger">Informations</h4>
             <ul className="list-none">
               <li ><a className="hover:text-[#ffd700]" href="#">A propos</a></li>
               <li ><a className="hover:text-[#ffd700]" href="#">Contact</a></li>
