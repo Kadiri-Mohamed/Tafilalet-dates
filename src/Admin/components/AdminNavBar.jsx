@@ -9,7 +9,7 @@ const AdminNavBar = ({ children }) => {
   };
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-screen ">
       {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full bg-black text-white overflow-y-auto transition-transform transform z-50 ${

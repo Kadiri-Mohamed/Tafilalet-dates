@@ -5,6 +5,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../User/pages/Home';
 import Products from '../User/pages/Products';
 import Cart from '../User/pages/Cart';
+import Services from '../User/pages/Services';
+import Contact from '../User/pages/Contact';
 // Admin Pages
 import ManagementComments from '../Admin/pages/ManagementComments';
 import ManagementProducts from '../Admin/pages/managementProducts';
@@ -14,6 +16,7 @@ import ManagementServices from '../Admin/pages/ManagementServices';
 // Layouts
 import UserLayout from './Layouts/UserLayout';
 import AdminLayout from './Layouts/AdminLayout';
+import ProductInfo from '../User/pages/ProductInfo';
 
 const AppRoutes = () => {
   return (
@@ -36,10 +39,18 @@ const AppRoutes = () => {
         }
       />
       <Route
+        path="/product/:id" // Add route for ProductInfo
+        element={
+          <UserLayout>
+            <ProductInfo />
+          </UserLayout>
+        }
+      />
+      <Route
         path="/services"
         element={
           <UserLayout>
-            <h1>Services</h1>
+            <Services/>
           </UserLayout>
         }
       />
@@ -47,7 +58,7 @@ const AppRoutes = () => {
         path="/contact"
         element={
           <UserLayout>
-            <h1>Contact</h1>
+            <Contact/>
           </UserLayout>
         }
       />

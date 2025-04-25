@@ -1,7 +1,9 @@
 import { FaCartPlus, FaHeart } from 'react-icons/fa';
-export default function Card({ image, title, prix }) {
+import { Link } from 'react-router-dom';
+
+export default function Card({ id, image, title, prix }) {
   return (
-    <div className="w-64 bg-gray-300 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+    <Link to={`/product/${id}`} className="block w-64 bg-gray-300 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
       <div className="absolute top-2 right-2 text-gray-600 hover:text-red-500 transition duration-300">
         <button className="p-1 rounded-full hover:bg-gray-600">
           <FaHeart size={20} />
@@ -11,10 +13,8 @@ export default function Card({ image, title, prix }) {
       <div
         className="h-40 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${image || '/images/datte-majhoul-01-jpg.jpg'})`, // Placeholder si image absente
+          backgroundImage: `url(${image || '/images/datte-majhoul-01-jpg.jpg'})`, // Placeholder if image is absent
         }}
-
-
       >
         <img src={image || '/images/datte-majhoul-01-jpg.jpg'} alt={title} className="w-full h-full object-cover" />
       </div>
@@ -28,6 +28,6 @@ export default function Card({ image, title, prix }) {
           Add to Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 }
